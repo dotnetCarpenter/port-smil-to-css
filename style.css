@@ -24,16 +24,6 @@ body {
 	stroke-width: 2;
 	fill: transparent;
 }
-.hero-200__svg-path path {
-	--end-path: calc(1 * (var(--delay-path) + var(--duration-path)));
-	--delay-stroke: calc(var(--end-path) + 0.1s);
-	--delay-fill: calc(var(--end-path));
-
-	/* duration | easing-function | delay | iteration-count | fill-mode | name */
-	animation:	var(--duration-path) linear var(--delay-path)   forwards svg_dash,
-				0.5s                 linear var(--delay-stroke) forwards svg_stroke,
-				0.5s                 linear var(--delay-fill)   forwards svg_fill;
-}
 .hero-200__svg-path--0 {
 	--delay-path: 0s;
 	--end-path: calc(1 * (var(--delay-path) + var(--duration-path)));
