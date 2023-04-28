@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Porting SMIL animation to CSS animation",
   "scripts": {
-    "build": "postcss --map --use cssnano --verbose --output style.min.css style.css",
-    "start": "python3 -m http.server 8000",
+    "build": "postcss --map --use cssnano --verbose --output docs/style.min.css style.css",
+    "start": "python3 -m http.server 8000 docs/",
     "dev": "nodemon --watch style.css --ext css --exec \"npm run build\""
   },
   "keywords": [
