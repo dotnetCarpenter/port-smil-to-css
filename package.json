@@ -1,17 +1,23 @@
 {
-  "name": "postcss-bug-var-calc",
+  "name": "port-smil-to-css",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Porting SMIL animation to CSS animation",
   "scripts": {
-    "test": "postcss --map --use cssnano --verbose --output style.min.css style.css",
-    "start": "python3 -m http.server 8000"
+    "build": "postcss --map --use cssnano --verbose --output style.min.css style.css",
+    "start": "python3 -m http.server 8000",
+    "dev": "nodemon --watch style.css --ext css --exec \"npm run build\""
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "css",
+    "SMIL",
+    "SVG",
+    "css-animation"
+  ],
+  "author": "dotnetcarpenter",
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^6.0.0",
+    "nodemon": "^2.0.22",
     "postcss": "^8.4.23",
     "postcss-cli": "^10.1.0"
   }
