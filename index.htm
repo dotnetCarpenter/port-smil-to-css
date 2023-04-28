@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>postcss issue</title>
+	<link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+	<div class="hero-200">
+		<svg class="hero-200__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 231.003 575.642">
+			<path class="hero-200__svg-path hero-200__svg-path--a" fill="transparent" stroke-dasharray="260.542236328125" stroke-dashoffset="260.542236328125" d="M80.777.958l-33.8 33.8a3.272 3.272 0 00-.959 2.314v31.845a3.273 3.273 0 003.272 3.272h19.6a3.273 3.273 0 003.279-3.272v-39.5a3.273 3.273 0 013.272-3.272h39.5a3.273 3.273 0 003.272-3.272V3.271A3.273 3.273 0 00114.938 0H83.091a3.274 3.274 0 00-2.314.959"/>
+			<path class="hero-200__svg-path hero-200__svg-path--b" fill="transparent" stroke-dasharray="260.53094482421875" stroke-dashoffset="260.53094482421875" d="M156.333 0h-31.847a3.273 3.273 0 00-3.272 3.272v19.6a3.273 3.273 0 003.272 3.272h39.5a3.272 3.272 0 013.272 3.272v39.5a3.273 3.273 0 003.272 3.272h19.6a3.273 3.273 0 003.272-3.272V37.069a3.271 3.271 0 00-.958-2.314L158.652.959A3.266 3.266 0 00156.333 0"/>
+			<path class="hero-200__svg-path hero-200__svg-path--c" fill="transparent" stroke-dasharray="260.52874755859375" stroke-dashoffset="260.52874755859375" d="M167.257 78.464v39.5a3.273 3.273 0 01-3.272 3.272h-39.5a3.272 3.272 0 00-3.272 3.272v19.6a3.272 3.272 0 003.272 3.272h31.846a3.272 3.272 0 002.314-.959l33.8-33.8a3.271 3.271 0 00.958-2.314V78.464a3.273 3.273 0 00-3.272-3.272h-19.6a3.272 3.272 0 00-3.272 3.272"/>
+		</svg>
+	</div>
+
+	<div class="hero-200">
+		<svg class="hero-200__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 231.003 575.642">
+			<path stroke-dasharray="260.542236328125" stroke-dashoffset="260.542236328125" fill="transparent" d="M80.777.958l-33.8 33.8a3.272 3.272 0 00-.959 2.314v31.845a3.273 3.273 0 003.272 3.272h19.6a3.273 3.273 0 003.279-3.272v-39.5a3.273 3.273 0 013.272-3.272h39.5a3.273 3.273 0 003.272-3.272V3.271A3.273 3.273 0 00114.938 0H83.091a3.274 3.274 0 00-2.314.959">
+				<animate id="a1" values="260.542236328125;0;" attributeName="stroke-dashoffset" begin="0s" dur="1.25s" repeatCount="1" fill="freeze" />
+				<animate id="b1" attributeName="stroke-width" values="2;0;" begin="a1.end+0.1s" dur="0.5s" fill="freeze" />
+				<animate id="c1" attributeName="fill" values="transparent;#d90008;" begin="a1.end" dur="0.5s" fill="freeze" />
+			</path>
+			<path stroke-dasharray="260.53094482421875" stroke-dashoffset="260.53094482421875" fill="transparent" d="M156.333 0h-31.847a3.273 3.273 0 00-3.272 3.272v19.6a3.273 3.273 0 003.272 3.272h39.5a3.272 3.272 0 013.272 3.272v39.5a3.273 3.273 0 003.272 3.272h19.6a3.273 3.273 0 003.272-3.272V37.069a3.271 3.271 0 00-.958-2.314L158.652.959A3.266 3.266 0 00156.333 0">
+				<animate id="a2" values="260.53094482421875;0;" attributeName="stroke-dashoffset" begin="a1.end-1s" dur="1.25s" repeatCount="1" fill="freeze" />
+				<animate id="b2" attributeName="stroke-width" values="2;0;" begin="a2.end+0.1s" dur="0.5s" fill="freeze" />
+				<animate id="c2" attributeName="fill" values="transparent;#d90008;" begin="a2.end" dur="0.5s" fill="freeze" />
+			</path>
+			<path stroke-dasharray="260.52874755859375" stroke-dashoffset="260.52874755859375" d="M167.257 78.464v39.5a3.273 3.273 0 01-3.272 3.272h-39.5a3.272 3.272 0 00-3.272 3.272v19.6a3.272 3.272 0 003.272 3.272h31.846a3.272 3.272 0 002.314-.959l33.8-33.8a3.271 3.271 0 00.958-2.314V78.464a3.273 3.273 0 00-3.272-3.272h-19.6a3.272 3.272 0 00-3.272 3.272">
+				<animate id="a3" values="260.52874755859375;0;" attributeName="stroke-dashoffset" begin="a2.end-1s" dur="1.25s" repeatCount="1" fill="freeze" />
+				<animate id="b3" attributeName="stroke-width" values="2;0;" begin="a3.end+0.1s" dur="0.5s" fill="freeze" />
+				<animate id="c3" attributeName="fill" values="transparent;#d90008;" begin="a3.end" dur="0.5s" fill="freeze" />
+			</path>
+		</svg>
+	</div>
+</body>
+</html>

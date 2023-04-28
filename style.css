@@ -1,0 +1,68 @@
+.hero-200 {
+	--color-red-hero: #d90008;
+	float: left;
+}
+
+.hero-200__svg {
+	height: 300px;
+
+	stroke: var(--color-red-hero);
+	stroke-width: 2;
+	fill: transparent;
+}
+
+/* SVG animation */
+.hero-200__svg-path {
+	--duration-path: 1.25s;
+
+	stroke-width: 2;
+	fill: transparent;
+}
+.hero-200__svg-path--a {
+	--delay-path: 0s;
+	--end-path: calc(1 * (var(--delay-path) + var(--duration-path)));
+	--delay-stroke: calc(var(--end-path) + 0.1s);
+	--delay-fill: calc(var(--end-path));
+
+	/* duration | easing-function | delay | iteration-count | fill-mode | name */
+	animation:	var(--duration-path) linear var(--delay-path)   forwards svg_dash,
+				0.5s                 linear var(--delay-stroke) forwards svg_stroke,
+				0.5s                 linear var(--delay-fill)   forwards svg_fill;
+}
+.hero-200__svg-path--b {
+	--delay-path: calc(1 * var(--duration-path) - 1s); /* accumulated time */
+	--end-path: calc(1 * (var(--delay-path) + var(--duration-path)));
+	--delay-stroke: calc(var(--end-path) + 0.1s);
+	--delay-fill: calc(var(--end-path));
+
+	/* duration | easing-function | delay | iteration-count | fill-mode | name */
+	animation:	var(--duration-path) linear var(--delay-path)   forwards svg_dash,
+				0.5s                 linear var(--delay-stroke) forwards svg_stroke,
+				0.5s                 linear var(--delay-fill)   forwards svg_fill;
+}
+.hero-200__svg-path--c {
+	--delay-path: calc(2 * var(--duration-path) - 2s); /* accumulated time */
+	--end-path: calc(var(--delay-path) + var(--duration-path));
+	--delay-stroke: calc(var(--end-path) + 0.1s);
+	--delay-fill: calc(var(--end-path));
+
+	/* duration | easing-function | delay | iteration-count | fill-mode | name */
+	animation:	var(--duration-path) linear var(--delay-path)   forwards svg_dash,
+				0.5s                 linear var(--delay-stroke) forwards svg_stroke,
+				0.5s                 linear var(--delay-fill)   forwards svg_fill;
+}
+@keyframes svg_dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes svg_stroke {
+	to {
+		stroke-width: 0;
+	}
+}
+@keyframes svg_fill {
+	to {
+		fill: var(--color-red-hero);
+	}
+}
